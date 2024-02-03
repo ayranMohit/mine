@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Recipe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div id="container">
+        <div class="container-header">
+          <button class="reload" id="reload">
+            <i class="fa-solid fa-rotate-right"></i>
+          </button>
+          <input type="text" id="input" />
+          <button class="search" id="search">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <div class="container-body">
+          <div class="fav-container" id="fav-container">
+            <h1 id="favh1">Favourite Meal</h1>
+            <button id="clearList"><i class="fa-solid fa-trash"></i></button>
+            <ul class="favMealUl" id="favMealUl"></ul>
+            <button id="span" class="span"></button>
+            <div id="mealDiv"></div>
+          </div>
+        </div>
+      </div>
+      <div id="popup-container">
+        <button id="popupCloseButton"><i class="fa-solid fa-xmark"></i></button>
+        <div id="popup-container-header">
+          
+        </div>
+        <div id="popup-container-body">
+          
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
