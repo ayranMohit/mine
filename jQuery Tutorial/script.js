@@ -66,17 +66,19 @@ $("document").ready(function () {
     $(this).removeAttr("style");
   });
   var count = 0;
-  $("input[type='text']").keypress(function (event) {
+  $("input[type='text']").keypress(function () {
     count++;
     $(".text").text(count);
-    // if (event.which == "8") {
-    //   count--
-    //   $(".text").text(count);
-    //   console.log("Backspace was pressed");
-    // }
+  });
+  $("input[type='text']").keydown(function (event) {
     if (event.code === "Backspace") {
-      count--;
+      if (count > 0) {
+        count--;
+      }
       $(".text").text(count);
+      if (count == 0) {
+        $(".text").text("")
+      }
     }
   });
   // keyboard events of both code & which
