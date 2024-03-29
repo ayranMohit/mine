@@ -1,0 +1,73 @@
+
+
+/* social panel */
+.social-panel-container {
+  position: fixed;
+  bottom: 5rem;
+  right: 1rem;
+  width: 350px;
+  border: 3px solid rgba(8, 32, 249, 0.835);
+  border-radius: 20px;
+  transform: translateX(110%);
+  transition: 1s;
+}
+.social-panel-container.active {
+  transform: translateX(-1%);
+}
+
+.social-panel .intro-p {
+  text-align: center;
+  background-color: rgba(8, 32, 249, 0.835);
+  color: white;
+  width: 70%;
+  border-radius: 0 0 10px 10px;
+  position: relative;
+  left: 40px;
+  padding: 0 0 0.2rem 0;
+}
+.social-panel .get-Touch-p {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.social-panel ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+  left: -15px;
+}
+.social-panel ul li {
+  font-size: 1.4rem;
+}
+.social-panel ul li a {
+  text-decoration: none;
+  color: black;
+}
+.social-panel ul li:hover {
+  font-size: 1.6rem;
+  transition: 0.1s;
+}
+#touch-btn {
+  position: fixed;
+  font-size: 1.2rem;
+  font-weight: 400;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 40px;
+  border: 2px solid rgba(68, 62, 242, 0.61);
+}
+#touch-btn:hover {
+  background-color: rgba(90, 32, 227, 0.848);
+  border: 2px solid rgba(90, 32, 227, 0.848);
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+#touch-btn.active {
+  background-color: rgba(68, 62, 242, 0.61);
+  color: white;
+  transition: 0.5s ease-in-out;
+}
